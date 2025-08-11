@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>ExternalExecutionTest</RootNamespace>
+    </PropertyGroup>
+
+
+    <ItemGroup>
+      <PackageReference Include="ScottPlot" Version="5.0.6-beta" />
+    </ItemGroup>
+
+</Project>
