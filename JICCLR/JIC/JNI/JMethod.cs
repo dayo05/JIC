@@ -59,6 +59,7 @@ public class JMethod {
         unsafe {
             signature = Marshal.PtrToStringAnsi((IntPtr)getMethodSignature(jci.FullJName, jmsi.Name,
                 string.Join("", jmsi.Params))).Replace(".", "/");
+            // WARN! memory might leaked!!!!!!!!! I should free this...
         }
 
         methodHandle = getMethod(jci.NativeClassInfo, jci.Package.Replace('.', '/') + "/" + jci.Name, jmsi.Name, signature);
